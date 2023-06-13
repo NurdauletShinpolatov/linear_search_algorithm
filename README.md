@@ -1,1 +1,1 @@
-# linear_search_algorithm
+# Searching algorithms
