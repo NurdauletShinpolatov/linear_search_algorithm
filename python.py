@@ -1,27 +1,15 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i  # Return the index where the target element is found
+    return -1  # Return -1 if the target element is not found
 
-int linearSearch(vector<int>& vec, int target) {
-    for (int i = 0; i < vec.size(); i++) {
-        if (vec[i] == target) {
-            return i; // Return the index where the target element is found
-        }
-    }
-    return -1; // Return -1 if the target element is not found
-}
+arr = [5, 2, 8, 12, 3]
+target = 8
 
-int main() {
-    vector<int> vec = {5, 2, 8, 12, 3};
-    int target = 8;
+result = linear_search(arr, target)
 
-    int result = linearSearch(vec, target);
-
-    if (result != -1) {
-        cout << "Element found at index " << result << endl;
-    } else {
-        cout << "Element not found in the vector" << endl;
-    }
-
-    return 0;
-}
+if result != -1:
+    print(f"Element found at index {result}")
+else:
+    print("Element not found in the list")
